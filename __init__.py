@@ -3,10 +3,6 @@ from aiohttp import web, ClientSession
 import multidict
 import folder_paths
 import os
-import sys
-import subprocess  # don't remove this
-from urllib.parse import urlparse
-import subprocess
 import base64
 import json
 import logging
