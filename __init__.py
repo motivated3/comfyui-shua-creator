@@ -6,7 +6,7 @@ import os
 import base64
 import json
 import logging
-
+import subprocess
 
 WEB_DIRECTORY = "entry"
 NODE_CLASS_MAPPINGS = {}
