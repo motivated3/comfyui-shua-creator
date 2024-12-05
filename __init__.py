@@ -31,15 +31,15 @@ MAX_BACKUP_FILES = 20
 @server.PromptServer.instance.routes.route('*', '/api/dm/{tail:.*}')
 async def proxy_handler(request):
     try:
-        HOST = "comfyui.guangnianai.test.sankuai.com"
+        HOST = "online.miaoshuaai.com"
         original_path = request.match_info['tail']
         logging.info(f"original_path: {original_path}")
-        target_path = f'http://{HOST}/api/dm/{original_path}'
+        target_path = f'https://{HOST}/api/dm/{original_path}'
         # 模拟浏览器请求头
         headers = {
             "Host": HOST,
-            "Origin": f"http://{HOST}",
-            "Referer": f"http://{HOST}",
+            "Origin": f"https://{HOST}",
+            "Referer": f"https://{HOST}",
         }
 
         # 复制请求中的其他头部信息
