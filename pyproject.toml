@@ -1,0 +1,14 @@
+[project]
+name = "comfyui-shua-creator"
+description = "With the MiaoShua creator's end, you can use this plugin to upload debugged workflows for consumer end users to use."
+version = "1.0.0"
+license = {file = "LICENSE"}
+
+[project.urls]
+Repository = "https://github.com/motivated3/comfyui-shua-creator"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "comfyui-shua-creator"
+Icon = ""
